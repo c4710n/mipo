@@ -75,8 +75,20 @@ body {
   hyphens: auto;
 }
 
+.page-break {
+  page-break-after: always;
+}
+
 .eof {
-  margin-top: 20px;
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #bebebe;
+  }
 }
 
 a {
