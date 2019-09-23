@@ -1,0 +1,267 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans Regular'),
+    url('./fonts/OpenSans/400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Open Sans Italic'),
+    url('./fonts/OpenSans/400i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans Bold'), url('./fonts/OpenSans/700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Open Sans Bold Italic'),
+    url('./fonts/OpenSans/700i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Source Code Pro Regular';
+  font-style: italic;
+  font-weight: bold;
+  src: url('./fonts/SourceCodePro/regular.woff') format('woff');
+}
+
+@page {
+  margin: 1cm 1.5cm 1cm 1.5cm;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Open Sans';
+}
+
+body {
+  color: rgb(51, 51, 51);
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  .logo {
+    order: 2;
+    height: 2cm;
+    width: auto;
+  }
+
+  .meta {
+    order: 1;
+  }
+}
+
+.body {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.eof {
+  margin-top: 20px;
+}
+
+a {
+  color: #114fea;
+}
+
+/* title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  cursor: text;
+}
+
+h1 tt,
+h1 code {
+  font-size: inherit;
+}
+h2 tt,
+h2 code {
+  font-size: inherit;
+}
+h3 tt,
+h3 code {
+  font-size: inherit;
+}
+h4 tt,
+h4 code {
+  font-size: inherit;
+}
+h5 tt,
+h5 code {
+  font-size: inherit;
+}
+h6 tt,
+h6 code {
+  font-size: inherit;
+}
+h1 {
+  text-align: right;
+  margin: 1em auto 2em;
+  font-size: 2.25em;
+  line-height: 1.2;
+}
+h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+/* code */
+code {
+  font-family: 'Source Code Pro Regular';
+  background-color: #f6f8fa;
+  padding: 2px 4px;
+  word-break: break-all;
+}
+
+pre {
+  background-color: #f6f8fa;
+  padding: 4px;
+
+  code {
+    word-break: normal;
+    padding: 0;
+  }
+}
+
+/* media */
+img {
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto 1em;
+}
+
+/* table */
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+  margin: 0.8em 0;
+}
+li > ol,
+li > ul {
+  margin: 0 0;
+}
+hr {
+  height: 2px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+li p.first {
+  display: inline-block;
+}
+ul,
+ol {
+  padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+blockquote {
+  border-left: 4px solid #dfe2e5;
+  padding: 0 15px;
+  color: #777777;
+}
+blockquote blockquote {
+  padding-right: 0;
+}
+table {
+  padding: 0;
+  word-break: initial;
+}
+table tr {
+  border-top: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+  background-color: #f8f8f8;
+}
+table tr th {
+  font-weight: bold;
+  border: 1px solid #dfe2e5;
+  border-bottom: 0;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+table tr td {
+  border: 1px solid #dfe2e5;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}
+
+tt {
+  border: 1px solid #e7eaed;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 0;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+}

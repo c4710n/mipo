@@ -1,0 +1,14 @@
+{
+  "name": "mipi",
+  "description": "A opinionated tool that aim to convert Markdown to PDF.",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "bin/cli.js test/content.md test/build.pdf -l ./test/logo.png && open test/build.pdf"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "localtime": "^1.0.2",
+    "relaxedjs": "^0.2.2",
+    "yargs": "^14.0.0"
+  }
+}
