@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const convert = require('../index') /* eslint-disable-line node/no-unpublished-require */
+const convert = require('../lib') /* eslint-disable-line node/no-unpublished-require */
 const { name } = require('../package.json')
 const path = require('path')
 const yargs = require('yargs')
