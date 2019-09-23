@@ -1,0 +1,13 @@
+style
+  include:scss style.scss
+
+.header
+  if logo
+    object.logo(data=`${logo}`)
+  .meta
+    p 最后生成于 #{updated_at}
+
+.body
+  include:markdown-it ./content.md
+
+.eof - EOF -
