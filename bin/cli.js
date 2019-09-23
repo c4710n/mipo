@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const mipi = require('..') /* eslint-disable-line node/no-unpublished-require */
+const convert = require('../index') /* eslint-disable-line node/no-unpublished-require */
 const { name } = require('../package.json')
 const path = require('path')
 const yargs = require('yargs')
@@ -56,4 +56,4 @@ if (media) {
   options.mediaPath = mediaPath
 }
 
-mipi(inputFile, outputFile, options)
+convert(inputFile, outputFile, options)
