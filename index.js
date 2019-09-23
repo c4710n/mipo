@@ -9,7 +9,7 @@ const localtime = require('localtime')
 const TEMPLATE_DIR = path.join(__dirname, 'template')
 const BUILD_BASE_DIR = path.join('/tmp', `${name}-build`)
 
-function mipi(inputFile, outputFile, { logoFile, _mediaPath } = {}) {
+function convert(inputFile, outputFile, { logoFile, _mediaPath } = {}) {
   cloneDir(TEMPLATE_DIR, BUILD_BASE_DIR)
   copyContent(inputFile, BUILD_BASE_DIR)
 
@@ -29,7 +29,7 @@ function mipi(inputFile, outputFile, { logoFile, _mediaPath } = {}) {
   )
 }
 
-module.exports = mipi
+module.exports = convert
 
 function cloneDir(srcPath, destPath) {
   fs.ensureDirSync(destPath)
