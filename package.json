@@ -5,6 +5,7 @@
   "license": "MIT",
   "repository": "2players/mipi",
   "bin": "bin/cli.js",
+  "main": "lib/index.js",
   "engines": {
     "node": ">=8"
   },
@@ -14,6 +15,7 @@
   },
   "files": [
     "bin",
+    "lib",
     "template"
   ],
   "dependencies": {
