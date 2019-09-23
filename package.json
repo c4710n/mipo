@@ -2,13 +2,44 @@
   "name": "mipi",
   "description": "A opinionated tool that aim to convert Markdown to PDF.",
   "version": "0.1.0",
+  "license": "MIT",
+  "repository": "2players/mipi",
+  "bin": "bin/cli.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
+    "lint": "eslint 'index.js' 'bin/**/*.js'",
     "test": "bin/cli.js test/content.md test/build.pdf -l ./test/logo.png && open test/build.pdf"
   },
+  "files": [
+    "bin",
+    "template"
+  ],
   "dependencies": {
     "fs-extra": "^8.1.0",
     "localtime": "^1.0.2",
     "relaxedjs": "^0.2.2",
     "yargs": "^14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.3.0",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "**/*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
