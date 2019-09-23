@@ -2,7 +2,6 @@
 
 const { name } = require('./package.json')
 const path = require('path')
-const os = require('os')
 const { spawn } = require('child_process')
 const fs = require('fs-extra')
 const localtime = require('localtime')
@@ -10,7 +9,7 @@ const localtime = require('localtime')
 const TEMPLATE_DIR = path.join(__dirname, 'template')
 const BUILD_BASE_DIR = path.join('/tmp', `${name}-build`)
 
-function mipi(inputFile, outputFile, { logoFile, mediaPath } = {}) {
+function mipi(inputFile, outputFile, { logoFile, _mediaPath } = {}) {
   cloneDir(TEMPLATE_DIR, BUILD_BASE_DIR)
   copyContent(inputFile, BUILD_BASE_DIR)
 
@@ -31,11 +30,6 @@ function mipi(inputFile, outputFile, { logoFile, mediaPath } = {}) {
 }
 
 module.exports = mipi
-
-function cloneTemplate(destPath) {
-  fs.ensureDirSync(destPath)
-  fs.copySync(TEMPLATE, destPath)
-}
 
 function cloneDir(srcPath, destPath) {
   fs.ensureDirSync(destPath)
