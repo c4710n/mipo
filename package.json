@@ -1,7 +1,7 @@
 {
   "name": "mipi",
   "description": "A opinionated tool that aim to convert Markdown to PDF.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "repository": "2players/mipi",
   "bin": "bin/cli.js",
