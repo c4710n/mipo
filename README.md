@@ -1,4 +1,4 @@
-# mipi
+# mipo
 
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 
@@ -9,15 +9,15 @@
 ## Installation
 
 ```sh
-npm install mipi
+npm install mipo
 ```
 
 ## Usage
 
 ```sh
-mipi --help
+mipo --help
 ```
 
 ## License
 
-[MIT](https://2players.studio/licenses/MIT) © [2Players Studio](https://2players.studio/)
+MIT
