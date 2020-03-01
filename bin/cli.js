@@ -52,7 +52,7 @@ if (logo) {
 }
 
 if (media) {
-  const mediaPath = path.join(cwd, mediaPath)
+  const mediaPath = path.join(cwd, media)
   options.mediaPath = mediaPath
 }
 
